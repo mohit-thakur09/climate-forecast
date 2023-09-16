@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 5px;
+    background-image:radial-gradient(circle,rgb(18, 14, 129),rgb(6, 3, 26) ) ;
+    color: whitesmoke;
+}
+
+.container{
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.country_search{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: rgba(208, 207, 216, 0.160);
+    border: none;
+    border-radius: 3px;
+    color: whitesmoke;
+}
+
+datalist#suggestion,.suggestion-option{
+    width: 100%;
+    color: aqua;
+}
+
+.country_search::placeholder{
+    color:whitesmoke;
+}
+
+.Weather_details{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    height: 280px;
+}
+.weather_icon{
+    display: flex;
+    align-self: center;
+}
+
+#icon{
+    width: 200px;
+    /* height: 190px; */
+}
+
+.country_details{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.weather-indicator::before{
+    content: "";
+    display: inline-block;
+    /* width: 15px; */
+    /* height: 15px; */
+    padding: 12px;
+    margin-right: 10px;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+
+.humidity::before{
+    background-image: url("./Images/humidity.png");
+
+}
+.wind::before{
+    background-image: url("./Images/wind.png");
+    
+}
+
+.pressure::before{
+    background-image: url("./Images/pressure.png");
+    
+}
+.forcast_week{
+    display: flex;
+}
+
+.week_card{
+    width: 20%;
+    height: 300px;
+    background-color: rgba(208, 207, 216, 0.160);
+    border-radius: 20px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+}
+
+.week_icon{
+    width: 180px;
+    height: 160px;
+}
+
+.week_day{
+    /* border: 2px ridge; */
+    padding-top: 20px;
+}
+
+.week_temp{
+    padding-bottom: 20px;
+    /* border: 2px groove; */
+}

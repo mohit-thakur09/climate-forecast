@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script >
+        function get_coordinamtes(){
+            options = {
+                enableHighAccuracy:true,
+                timeout:5000,
+                maximumAge: 10000
+            };
+            let navigate = navigator.geolocation.getCurrentPosition(success,failed,options);
+        }
+        let success = (s_obj)=>{
+            console.log(s_obj.coords.latitude,s_obj.coords.longitude,s_obj);
+        }
+        let failed = (f_obj)=>{
+            console.log(f_obj);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="click me" onclick="get_coordinamtes()">
+</body>
+</html>

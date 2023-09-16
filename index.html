@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forcast App</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet"/>
+</head>
+<body>
+    <main class="container">
+        <section >
+            <input type="search" list="suggestion" class="country_search" placeholder="Enter City Name"/>
+            <datalist id="suggestion" ></datalist>
+        </section>
+
+        <section class="Weather_details">
+
+            <div class="country_details">
+
+                <h2 class="city_name">City</h2>
+                <h3 class="day_name">Day</h3>
+                
+                <div>
+                    <p class="weather-indicator humidity">
+                        <span class="humidity-indicator">22</span>%
+                    </p>
+    
+                    <p class="weather-indicator wind">
+                        <span class="wind-indicator">North, 0</span>m/s
+                    </p>
+    
+                    <p class="weather-indicator pressure">
+                        <span class="pressure-indicator">1011 </span> hPa
+                    </p>
+                </div>
+                
+            </div>
+
+            <div class="weather_icon">
+                <div>
+                    <img id="icon" src="/Images/rain.png"/>
+                </div>
+                
+            </div>
+
+            <h4 class="country_temp">
+                <span class="temprature">+26 </span>&deg;C
+            </h4>
+
+        </section>
+
+        <section class="forcast_week">
+    
+            <article class="week_card">
+                <div>
+                    <img class="week_icon" src="./Images/scattered-clouds.png" />
+                </div>
+                
+                <h3 class="week_day">Wednesday</h3>
+                
+                <p>
+                    <span>+23</span>&deg;C
+                </p>
+            </article>
+
+            <article class="week_card">
+                <div>
+                    <img class="week_icon" src="./Images/broken-clouds.png" />
+                </div>
+                
+                <h3 class="week_day">Wednesday</h3>
+                
+                <p>
+                    <span>+23</span>&deg;C
+                </p>
+            </article>
+
+            <article class="week_card">
+                <div>
+                    <img class="week_icon" src="./Images/mist.png" />
+                </div>
+                
+                <h3 class="week_day">Wednesday</h3>
+                
+                <p>
+                    <span>+23</span>&deg;C
+                </p>
+            </article>
+
+            <article class="week_card">
+                <div>
+                    <img class="week_icon" src="./Images/rain.png" />
+                </div>
+                
+                <h3 class="week_day">Wednesday</h3>
+                
+                <p>
+                    <span>+23</span>&deg;C
+                </p>
+            </article>
+
+            <article class="week_card">
+                <div>
+                    <img class="week_icon" src="./Images/thunderstorm.png" />
+                </div>
+                
+                <h3 class="week_day">Wednesday</h3>
+                
+                <p class="week_temp">
+                    <span>+23</span>&deg;C
+                </p>
+            </article>
+
+        </section>
+    
+    </main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="./weatherApp.js"></script>
+    
+</body>
+</html>
