@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(circle,#ada2f7, #6E5CDD);
+    color: whitesmoke;
+}
+
+#imageIcon{
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+#cityInp::placeholder{
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tempAlignment{
+    text-align:end;
+}
+
+
+@media only screen and (max-width:767px) {
+    .tempAlignment{
+        text-align: center;
+    }
+
+    .tempContainer{
+        padding-top: 20px;
+    }
+
+    .tempContainer::before{
+        content: "";
+        height: 3px;
+        width: 100%;
+        float: left;
+        background-color: white;
+        display: block;
+        top: 50%;
+        position: relative;
+        z-index: -1;
+    }
+
+    .smScreenTemp{
+        border: 1px solid white;
+        background-color: #ada2f7;
+        padding: 2px 10px;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .card{
+        max-width: 250px;
+        margin: auto;
+    }
+}
+
+
